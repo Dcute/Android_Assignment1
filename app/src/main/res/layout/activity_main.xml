@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dcute.android_assignment.MainActivity"
+    android:background="@drawable/start_up_pages">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/title" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="@null"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/start_game_button"
+            android:background="@drawable/startgamebutton"
+            android:layout_marginTop="10dp"
+            android:onClick="start_button_click" />
+
+        <Button
+            android:text="@null"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/setting_button"
+            android:background="@drawable/settingbutton"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+    <!-- Location of the application title and button -->
+
+</RelativeLayout>

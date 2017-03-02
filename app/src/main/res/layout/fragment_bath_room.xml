@@ -1,0 +1,149 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dcute.android_assignment.BathRoom"
+    android:background="@drawable/bath_room">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_gravity="start"
+        android:id="@+id/topbar"
+        android:background="@drawable/top_bar">
+
+        <TextView
+            android:text="Clealiness:"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/Cleaness_bar" />
+
+        <TextView
+            android:text="50"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/cleaness_number"/>
+
+        <TextView
+            android:text="%"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <!-- Location of the value of the character -->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:id="@+id/quick_setting_button">
+    </LinearLayout>
+    <!-- Locate Setting Button-->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/loadgame"
+            android:layout_weight="1"
+            android:id="@+id/load_button">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/savegame"
+            android:layout_weight="1"
+            android:id="@+id/save_button">
+        </Button>
+    </LinearLayout>
+    <!-- Location of Load Game and Save game-->
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="@null"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/backtolivingroom_left"
+            android:id="@+id/exit_bathroom_button" />
+    </LinearLayout>
+    <!-- Location of back to living button -->
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="This is my bathroom\n You can clean me by\n using the soap\n"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_width="225dp"
+            android:layout_height="175dp"
+            android:background="@drawable/chat_box"
+            android:id="@+id/chat_box"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="@null"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/blue_bean_animation"
+            android:id="@+id/character" />
+    </RelativeLayout>
+    <!-- Location of Character and the Chat Box -->
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/transparent">
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:id="@+id/soap"
+            android:src="@drawable/soap" />
+    </LinearLayout>
+    <!-- Location of the Soap -->
+
+</FrameLayout>

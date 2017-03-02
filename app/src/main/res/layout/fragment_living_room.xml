@@ -1,0 +1,193 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dcute.android_assignment.LivingRoom"
+    android:background="@drawable/living_room">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_gravity="start"
+        android:id="@+id/topbar"
+        android:background="@drawable/top_bar">
+
+        <TextView
+            android:text="Food:"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/food_bar" />
+
+        <TextView
+            android:text="10"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/food_number"/>
+
+        <TextView
+            android:text="%"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:text="Drink:"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/drink_bar" />
+
+        <TextView
+            android:text="10"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/drink_number"/>
+
+        <TextView
+            android:text="%"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <!-- Location of the value of the character -->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:id="@+id/quick_setting_button">
+    </LinearLayout>
+    <!-- Locate Setting Button-->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/loadgame"
+            android:layout_weight="1"
+            android:id="@+id/load_button">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/savegame"
+            android:layout_weight="1"
+            android:id="@+id/save_button">
+        </Button>
+    </LinearLayout>
+    <!-- Location of Load Game and Save game-->
+
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="This is the living\n room. You can\n feed me when I'm hungry or thirsty.\n"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_width="225dp"
+            android:layout_height="200dp"
+            android:background="@drawable/chat_box"
+            android:id="@+id/chat_box"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="@null"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/blue_bean_animation"
+            android:id="@+id/character" />
+    </RelativeLayout>
+    <!-- Location of Character and the Chat Box -->
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="@null"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gotobedroom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/goto_bedroom_button" />
+
+        <Button
+            android:text="@null"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gotobathroom"
+            android:id="@+id/goto_bathroom_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <!-- Location of go to Bed Room and go to Bath Room -->
+
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/transparent">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:id="@+id/food"
+            android:src="@drawable/food" />
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:id="@+id/drink"
+            android:src="@drawable/water"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <!-- Location of the Lamp and Time -->
+
+</FrameLayout>

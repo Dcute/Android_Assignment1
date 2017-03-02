@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dcute.android_assignment.BedRoom"
+    android:background="@drawable/bed_room">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:id="@+id/quick_setting_button">
+    </LinearLayout>
+    <!-- Locate Setting Button-->
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="@null"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backtolivingroom_right"
+            android:id="@+id/exit_bedroom_button" />
+    </LinearLayout>
+    <!-- Location of back to living button -->
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Hi, My name is Kiki. \nWelcome to my room, \nthis is where I take a \nnap\n"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="19dp"
+            android:layout_width="225dp"
+            android:layout_height="200dp"
+            android:background="@drawable/chat_box"
+            android:id="@+id/chat_box"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="@null"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/blue_bean_animation"
+            android:id="@+id/character" />
+    </RelativeLayout>
+    <!-- Location of Character and the Chat Box -->
+
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/transparent">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@drawable/lamp_animation"
+            android:id="@+id/lamp_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_height="800dp"
+            android:layout_width="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/reminder"
+            android:background="@drawable/reminder_animation"/>
+    </RelativeLayout>
+    <!-- Location of the Lamp and Time -->
+
+</FrameLayout>
